@@ -1,0 +1,593 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/eX01.js"></script>
+    <script type="text/javascript" src="~/Scripts/eX02.js"></script>
+    <script type="text/javascript" src="~/Scripts/eX03.js"></script>
+    <script type="text/javascript" src="~/Scripts/eX04.js"></script>
+}
+
+<h2>@ViewBag.Title.</h2>
+
+
+<!-- Portfolio Grid Section -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Projects</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal1">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/books.jpg" alt="">
+                    <h3 class="text-secondary text-center">My Reads</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal2">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/cards.png" alt="">
+                    <h3 class="text-secondary text-center">Matching Game</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal3">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/game.jpg" alt="">
+                    <h3 class="text-secondary text-center">Arcade Game</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal4">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/gray.jpg" alt="">
+                    <h3 class="text-secondary text-center">Gray Scale</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal5">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/number.jpg" alt="">
+                    <h3 class="text-secondary text-center">Add block</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal6">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/review.jpg" alt="">
+                    <h3 class="text-secondary text-center">Restaurant reviews</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal7">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/search.png" alt="">
+                    <h3 class="text-secondary text-center">Search Movies</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal8">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/tictac.jpg" alt="">
+                    <h3 class="text-secondary text-center">Tic Tac Toe</h3>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#exampleModal9">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="~/img/primModal/java.jpg" alt="">
+                    <h3 class="text-secondary text-center">JavaScritp - Jquey</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio Modals -->
+<!-- Portfolio Modal 1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">My Reads</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/myReads.png" alt="">
+                            <h4 class="mb-5">JavaScript / React.js</h4>
+                            <p class="mb-5">Front-End Web Development Nanodegree from Udacity. This website allows the user to keep track of books that have been read, are currently being read, or that he or she would like to read.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://eager-tesla-adebc3.netlify.com/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Matching Game</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/memory.png" alt="">
+                            <h4 class="mb-5">HTML/ CSS / JavaScript </h4>
+                            <p class="mb-5">Web-based memory card matching game. It's one of the projects from the Udacity Front-End Web Development Nanodegree.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://reijoyce.github.io/Memory-card/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Arcade Game</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/arcade.png" alt="">
+                            <h4 class="mb-5">HTML / CSS / JavaScript </h4>
+                            <p class="mb-5">Frogger clone for Udacity's Front-End Web Developer Nanodegree</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://reijoyce.github.io/Arcade-Game/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 4 -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Gray Scale</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/gray.png" alt="">
+                            <h4 class="mb-5">HTML / CSS  </h4>
+                            <p class="mb-5"> Grayscale is a multi page HTML.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://reijoyce.github.io/Grayscale-HTML-CSS/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 5 -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Add block Number</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/add.png" alt="">
+                            <h4 class="mb-5">JavaScript / CSS /JavaScript </h4>
+                            <p class="mb-5">Add a new box on click and generated a new random number.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://jolly-mayer-fb9d27.netlify.com/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 6 -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Restaurant reviews</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/restaurant.png" alt="">
+                            <h4 class="mb-5">JavaScript / API / Json </h4>
+                            <p class="mb-5">
+                                An offline first web application,focus on accessibility, responsiveness, offline first with IDB and POST requests with offline-first approach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://reijoyce.github.io/Restaurant-reviews/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 7 -->
+<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Search Movies</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/search.png" alt="">
+                            <h4 class="mb-5">HTML/ CSS / JavaScript </h4>
+                            <p class="mb-5">A movie search application to get data from IMDB api.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://trusting-meninsky-0bcd9e.netlify.com/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 8 -->
+<div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">Tic Tac Toe</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <hr class="star-dark mb-5">
+                            <img class="img-fluid mb-5" src="~/img/modal/tictactoe.png" alt="">
+                            <h4 class="mb-5">HTML/ CSS / JavaScript </h4>
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" target="_blank" href="https://reijoyce.github.io/tic-tac-toe/">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 9 -->
+
+
+
+<!-- Portfolio Modal 9 -->
+<div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="text-secondary text-uppercase mb-0 container text-center">JavaScript / Jquery</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-ex01-tab" data-toggle="tab" href="#nav-ex01" role="tab" aria-controls="nav-ex01" aria-selected="true">Exercise 01</a>
+                        <a class="nav-item nav-link" id="nav-ex02-tab" data-toggle="tab" href="#nav-ex02" role="tab" aria-controls="nav-ex02" aria-selected="false">Exercise 02</a>
+                        <a class="nav-item nav-link" id="nav-ex03-tab" data-toggle="tab" href="#nav-ex03" role="tab" aria-controls="nav-ex03" aria-selected="false">Exercise 03</a>
+                        <a class="nav-item nav-link" id="nav-ex04-tab" data-toggle="tab" href="#nav-ex04" role="tab" aria-controls="nav-ex04" aria-selected="false">Exercise 04</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-ex01" role="tabpanel" aria-labelledby="nav-ex01-tab">
+                        <form class="form-group frm-test">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">First Number</label>
+                                <input type="number" class="form-control" id="input01" placeholder="First Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Second Number</label>
+                                <input type="number" class="form-control" id="input02" placeholder="Second Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Third Number</label>
+                                <input type="number" class="form-control" id="input03" placeholder="Third Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Fourth Number</label>
+                                <input type="number" class="form-control" id="input04" placeholder="Fourth Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Fifth Number</label>
+                                <input type="number" class="form-control" id="input05" placeholder="Fifth Number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <h4 class="ex01"> Determine which number is the least: </h4>
+                        <div class="test-content">  </div>
+
+                        <h4 class="ex01"> Determine which number is the greatest: </h4>
+                        <div class="test-content2">  </div>
+
+                        <h4 class="ex01">Determine the mean of the numbers </h4>
+                        <div class="test-content3">  </div>
+
+                        <h4 class="ex01">Determine the sum of all the numbers </h4>
+                        <div class="test-content4">  </div>
+
+                        <h4 class="ex01">Determine the product of all the numbers</h4>
+                        <div class="test-content5">  </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <pre class="brush: js modal-dialog modal-lg">
+                                    $(document).ready(() =>{
+                                    $(".frm-test").submit((e)=> {
+                                        e.preventDefault();
+                                        var num1 = $("#input01").val();
+                                        var num2 = $("#input02").val();
+                                        var num3 = $("#input03").val();
+                                        var num4 = $("#input04").val();
+                                        var num5 = $("#input05").val();
+
+                                        var resultMin = [num1, num2, num3, num4, num5];
+                                        $(".test-content").html(Math.min(...resultMin));
+
+                                        var resultMax = [num1, num2, num3, num4, num5];
+                                        $(".test-content2").html(Math.max(...resultMax));
+
+                                        var result = arr => arr.reduce((a, b) => a + b, 0) / arr.length
+                                        var resultMean = (result([num1, num2, num3, num4, num5]));
+                                        $(".test-content3").html(resultMean);
+
+                                        var numbers = [num1, num2, num3, num4, num5];
+                                        function getSum(total, num) {
+                                            return total + Math.round(num);
+                                        }
+                                        var resultSum = numbers.reduce(getSum, 0);
+        
+                                        $(".test-content4").html(resultSum);
+
+                                        var numbers2 = [num1, num2, num3, num4, num5]
+                                        var product = numbers2.reduce((prev, curr) => prev * curr);
+                                        $(".test-content5").html(product);                 
+                                        });
+                                    });
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-ex02" role="tabpanel" aria-labelledby="nav-ex02-tab">
+                        <form class="form-group frm-test2">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Type a Number</label>
+                                <input type="number" class="form-control" id="input06" placeholder="Number">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <h4 class="ex02"> The factorial of a non-negative integer number: </h4>
+                        <div class="test-content6"> </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <pre class="brush: js modal-dialog modal-lg">
+                                   $(document).ready(()=> {
+                                   $(".frm-test2").submit((e)=> {
+                                        e.preventDefault();
+                                        var num01 = $("#input01").val();
+                                        var factorial = number(n)=> {
+                                            if (num01 <= 0) {
+                                                return alert('Type a positive number')
+                                            } else
+                                                return n < 2 ? 1 : n * number(n - 1);
+                                             };
+                                        $(".test-content").html(factorial(num01));
+                                        })
+                                    })                                                
+                                </pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-ex03" role="tabpanel" aria-labelledby="nav-ex03-tab">
+                        <form class="form-group frm-test3">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">First Number</label>
+                                <input type="number" class="form-control" id="input07" placeholder="First Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Second Number</label>
+                                <input type="number" class="form-control" id="input08" placeholder="Second Number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <h4 class="ex01"> Ascending order </h4>
+                        <div class="test-content7">  </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <pre class="brush: js modal-dialog modal-lg">
+                                    $(document).ready(function () {
+                                        $(".frm-test3").submit(function (e) {
+                                            e.preventDefault();
+                                            var num01 = $("#input01").val();
+                                            var num02 = $("#input02").val();
+        
+                                            var i;
+                                            for (i = 0; i <= 100; i++) {
+            
+                                                if (i % num01 === 0 && i % num02 === 0) {
+                                                    $(".test-content").append("<b>FizzBuzz-</b>");
+                                                    console.log("FizzBuzz");
+                                                } else if (i % num01 === 0) {
+                                                    $(".test-content").append("<b>Fizz-</b>");
+                                                    console.log("Fizz")
+                                                } else if (i % num02 === 0) {
+                                                    $(".test-content").append("<b>Buzz-</b>");
+                                                    console.log("Buzz")
+                                                } else {
+                                                    $(".test-content").append(`${i}-`);
+                                                    console.log([i])
+                                                }
+
+                                            }
+        
+                                            })
+                                    })
+
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-ex04" role="tabpanel" aria-labelledby="nav-ex04-tab">
+                        <form class="form-group frm-test4">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Some word</label>
+                                <input type="text" class="form-control" id="input10" placeholder="type a word">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <h4 class="ex04"> Is it Polindrome? </h4>
+                        <div class="test-content10">  </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <pre class="brush: js modal-dialog modal-lg">
+                                    $(document).ready(()=> {
+                                    $(".frm-test4").submit((e)=> {
+                                        e.preventDefault();
+                                        var myArray = [$("#input01").val()];
+                                         myArray.filter(function (textA, textB) {
+                                            var currentText = textA.split('').reverse().join('')
+                                             if (textA == currentText) {
+                                                 $(".test-content").html(myArray[textB] + " " + " is Palindrome");
+                                             }
+                                             else {
+                                                 $(".test-content").html("Isn't Palindrome")
+                                             }
+                                            });
+                                        })
+                                    })
+                                </pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Code
+                    </button>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+
