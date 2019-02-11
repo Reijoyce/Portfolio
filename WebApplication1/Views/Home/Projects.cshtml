@@ -478,19 +478,17 @@
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
                                 <pre class="brush: js modal-dialog modal-lg">
-                                   $(document).ready(()=> {
-                                   $(".frm-test2").submit((e)=> {
-                                        e.preventDefault();
-                                        var num01 = $("#input01").val();
-                                        var factorial = number(n)=> {
-                                            if (num01 <= 0) {
+                                   $(document).ready(function () {
+                                    $(".frm-test2").submit(function (e) {
+                                        e.preventDefault();;
+                                        var num06 = $("#input06").val();  
+                                            if (num06 <= 0) {
                                                 return alert('Type a positive number')
                                             } else
-                                                return n < 2 ? 1 : n * number(n - 1);
-                                             };
-                                        $(".test-content").html(factorial(num01));
-                                        })
-                                    })                                                
+                                                for (var n = num06 - 1; n > 1; n--) {
+                                                    num06 *= n;
+                                                  $(".test-content6").html(num06);  
+                                                }                                        
                                 </pre>
                             </div>
                         </div>

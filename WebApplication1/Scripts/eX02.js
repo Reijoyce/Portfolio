@@ -1,14 +1,13 @@
 ﻿$(document).ready(function () {
     $(".frm-test2").submit(function (e) {
         e.preventDefault();;
-        var num06 = $("#input06").val();
-        var factorial = function fac(n) {
+        var num06 = $("#input06").val();  
             if (num06 <= 0) {
                 return alert('Type a positive number')
             } else
-                return n < 2 ? 1 : n * fac(n - 1);
-        };
+                for (var n = num06 - 1; n > 1; n--) {
+                    num06 *= n;
+                  $(".test-content6").html(num06);  
+                }
 
-        $(".test-content6").html(factorial(num06));
-    })
-})
+        
